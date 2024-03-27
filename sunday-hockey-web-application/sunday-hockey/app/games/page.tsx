@@ -11,6 +11,7 @@ import {
   Card,
   Grid,
   Button,
+  Space,
 } from '@mantine/core';
 import Link from 'next/link';
 import { useDisclosure } from '@mantine/hooks';
@@ -18,6 +19,7 @@ import NavbarLayout from '@/components/NavBar/NavBar';
 import GamesTable from '@/components/Games/GamesTable';
 import NextGameCard from '@/components/GameInformation/NextGameCard';  
 import { useMediaQuery } from '@mantine/hooks'; // Import useMediaQuery hook
+import HolidayGameCard from '@/components/GameInformation/HolidayGameCard';
 
 
 export default function BasicAppShell() {
@@ -35,7 +37,10 @@ export default function BasicAppShell() {
         </Grid.Col>
         <Grid.Col span={isMobile ? 12 : 6}>
           <NextGameCard />
+          <Space h="lg" />
+          <HolidayGameCard />
         </Grid.Col>
+
       </Grid>
     </NavbarLayout>
   );

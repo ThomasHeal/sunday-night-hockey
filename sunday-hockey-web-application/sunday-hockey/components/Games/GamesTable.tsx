@@ -6,103 +6,83 @@ import { Notifications } from '@mantine/notifications';
 
 const initialGameInfo  = [
     {
-        date: 'Sunday, April 16th, 2024',
+        date: 'Sunday, March 31st, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
     },
     {
-        date: 'Sunday, April 23rd, 2024',
+        date: 'Sunday, April 14th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, April 30th, 2024',
+        date: 'Sunday, April 28th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, May 7th, 2024',
+        date: 'Sunday, May 12th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, May 14th, 2024',
+        date: 'Sunday, May 26th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, May 21st, 2024',
+        date: 'Sunday, June 9th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, May 28th, 2024',
+        date: 'Sunday, June 23rd, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, June 4th, 2024',
+        date: 'Sunday, July 7th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, June 11th, 2024',
+        date: 'Sunday, July 21st, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, June 18th, 2024',
+        date: 'Sunday, August 4th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, June 25th, 2024',
+        date: 'Sunday, August 18th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, July 2nd, 2024',
+        date: 'Sunday, September 1st, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
     {
-        date: 'Sunday, July 9th, 2024',
+        date: 'Sunday, September 15th, 2024',
         time: '8:00 PM',
         arena: 'Cambridge Sports Park',
         reminder: false,
-
     },
-    {
-        date: 'Sunday, July 16th, 2024',
-        time: '8:00 PM',
-        arena: 'Cambridge Sports Park',
-        reminder: false,
-
-    },
-
 ]
 
 export default function GamesTable() {
