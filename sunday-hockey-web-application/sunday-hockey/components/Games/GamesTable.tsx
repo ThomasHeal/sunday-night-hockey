@@ -1,7 +1,8 @@
 
 import { Button, Table } from '@mantine/core';
 import React, { useState } from 'react';
-import { notifications } from '@mantine/notifications'; // Import notifications from Mantine
+import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 
 const initialGameInfo  = [
     {
@@ -112,7 +113,7 @@ export default function GamesTable() {
       setGameInfo(prevGameInfo => {
         const updatedGameInfo = [...prevGameInfo];
         updatedGameInfo[index] = { ...updatedGameInfo[index], reminder: !updatedGameInfo[index].reminder };
-        notifications.show({
+        Notifications.show({
           title: 'Reminder Sent',
           message: `Reminder sent for ${updatedGameInfo[index].date}`,
           color: 'blue',
@@ -146,11 +147,16 @@ export default function GamesTable() {
     );
   
     return (
+      <MantineProvider>
+        <Notifications />
       <Table highlightOnHover withTableBorder captionSide='top' verticalSpacing="xs">
         <Table.Tbody>
           {ths}
           {rows}
         </Table.Tbody>
       </Table>
+    </MantineProvider>
+
     );
+
   }
